@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+h3{
+    margin-top: 1vmin;
+}
+
+
+#game{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: fit-content;
+    border-collapse: collapse;
+    margin: 10vmin auto;
+}
+
+#victoria, #empate{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#victoria{
+    background-color: rgba(0, 128, 0, 0.452);
+}
+
+#empate{
+    background-color: rgba(128, 128, 128, 0.452);
+}
+
+#empate div{
+    background-color: rgba(255, 255, 255, 0.342);
+    width: fit-content;
+    padding: 5vmin;
+    border-radius: 3vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#victoria div{
+    background-color: rgba(255, 255, 255, 0.342);
+    width: fit-content;
+    padding: 5vmin;
+    border-radius: 3vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#empate div > *{
+    margin: 1vmin;
+}
+
+#victoria div > * {
+    margin: 1vmin;
+}
+
+
+#victoria button, #empate button{
+    width: fit-content;
+}
+
+.celda{
+    width: 15vmin;
+    height: 15vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1{
+    border-left: 1vmin solid purple;
+    border-right: 1vmin solid purple;
+}
+
+.row-1{
+    border-top: 1vmin solid purple;
+    border-bottom: 1vmin solid purple;
+}
+
+.celda > svg{
+    width: 100%;
+    height: 100%;
+}
